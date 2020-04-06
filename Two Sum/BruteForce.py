@@ -26,7 +26,7 @@ class Solution:
         for i in range(len(array)):
             for j in range(len(array)):
                 if  (i != j) and (array[i] + array[j]) == target:
-                    indices = [j, i]
+                    indices = [j, i] # or indices = [i, j] << The solution was created to match the testcase. 
                 else:
                     continue
     
