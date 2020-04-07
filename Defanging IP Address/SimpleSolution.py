@@ -21,3 +21,12 @@
 #Constraints:
 #
 #The given address is a valid IPv4 address.
+
+class Solution:
+
+    def defangIPaddr(self, address):
+	
+        return address.replace(".", "[.]")
+
+#We have a simple method in python for strings name - .replace, in which the specif character/string could be replaced. 
+#i.e. str = "1, 2, 3" >> str.replace('2', '4') >> Output will be "1, 4, 3". 
