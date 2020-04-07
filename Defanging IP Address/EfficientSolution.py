@@ -5,35 +5,22 @@
 ## Problem: 1108
 ## Problem Name: Defanging an IP Address
 ##===================================
-#Given a non-negative integer num, return the number of steps to reduce it to zero. 
+#Given a valid (IPv4) IP address, return a defanged version of that IP address.
 #
-#If the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it.
+#A defanged IP address replaces every period "." with "[.]".
+#
 #Example 1:
 #
-#Input: num = 14
-#Output: 6
-#Explanation: 
-#Step 1) 14 is even; divide by 2 and obtain 7. 
-#Step 2) 7 is odd; subtract 1 and obtain 6.
-#Step 3) 6 is even; divide by 2 and obtain 3. 
-#Step 4) 3 is odd; subtract 1 and obtain 2. 
-#Step 5) 2 is even; divide by 2 and obtain 1. 
-#Step 6) 1 is odd; subtract 1 and obtain 0.
-#
+#Input: address = "1.1.1.1"
+#Output: "1[.]1[.]1[.]1"
 #Example 2:
 #
-#Input: num = 8
-#Output: 4
-#Explanation: 
-#Step 1) 8 is even; divide by 2 and obtain 4. 
-#Step 2) 4 is even; divide by 2 and obtain 2. 
-#Step 3) 2 is even; divide by 2 and obtain 1. 
-#Step 4) 1 is odd; subtract 1 and obtain 0.
+#Input: address = "255.100.50.0"
+#Output: "255[.]100[.]50[.]0"
 #
-#Example 3:
+#Constraints:
 #
-#Input: num = 123
-#Output: 12
+#The given address is a valid IPv4 address.
 
 class Solution:
 
