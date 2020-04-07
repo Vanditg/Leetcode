@@ -2,8 +2,8 @@
 ## Leetcode
 ## Student: Vandit Jyotindra Gajjar
 ## Year: 2020
-## Problem: 1342
-## Problem Name: Number of Steps to Reduce a Number to Zero
+## Problem: 1108
+## Problem Name: Defanging an IP Address
 ##===================================
 #Given a non-negative integer num, return the number of steps to reduce it to zero. 
 #
@@ -34,36 +34,25 @@
 #
 #Input: num = 123
 #Output: 12
-#
-#The solution for this problem is fairly starightforward by following the problem statement. 
 
 class Solution:
 
-    def numberOfSteps (self, number):
-
-        step = 0  #Initialize our step counter. 
-
-        while number != 0:   #While the number is not zero (Following the condition of non-negative integer)
-
-            if number % 2 == 0:   #Condition Check - If number is divided by zero and gives no remainder
-
-                number = number // 2    #We'll divide the number by 2 again. Here (//) will give you integer as in 2.0, 3.0 etc. In python (/) will give you floating numbers.
-
-            else:    #If condition fails then
-
-                number = number - 1   #We'll subtract the number by 1. 
-
-            step = step + 1      #Corresponding, we'll update our step counter. 
-
-        return step     #We'll return the step number at the end. 
+    def defangIPaddr(self, address):
+	
+        string = [] #[]
 		
-#For example: number = 3
-# 3 % 2 = 1 (If condition failed.)
-# 3 - 1 = 2 (Enters the else condition.) [step = 1]
-# Now number = 2. 
-# 2 % 2 = 0 (If condition pass.)
-# 2 // 2 = 1.0 (Enters the if condition.) [step = 2]
-# number = 1.0
-# 1 % 2 = -1 (if condition failed.)
-# 1 - 1 = 0 (Enters the else condition.) (Goal state reached.) [step = 3] 
-# Total number of step = 3.
+        for character in address:
+			
+            if character == '.':   #1.1.1.1 if . is in address
+				
+                string.append("[.]")    #we'll append it by ["[.]"]
+			
+            else:
+				
+                string.append(character) #Or we'll append it with characters
+		
+        return "".join(string)  #Finally we'll join the string which will give "1[.]1[.]1[.]1"
+.
+#Initialize empty string
+#For every character in our IP Address, we will check with the condition that if "." is in the address, we'll simply replace with our given value which is "[.]", 
+#otherwise, we'll append remaining address. Lastly, we'll simply join all the character in string. 
