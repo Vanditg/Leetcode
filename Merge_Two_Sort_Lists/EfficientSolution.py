@@ -18,9 +18,7 @@ class Solution:
         point = head	#Pointer for reference
         
         while l1 or l2:    #While either of the list is empty or not.
-            if l1 is None and l2 is None:    #Condition-check: if l1 is empty and l2 is empty
-                break	#We enter the condition and break the loop.
-            elif l1 is None:	#Condition-check: if l1 is empty.
+            if l1 is None:	#Condition-check: if l1 is empty.
                 point.next = l2		#We enter the condition and point it to l2 
                 break	#Then we break the loop. 
             elif l2 is None:	#Condition-check: if l2 is empty
