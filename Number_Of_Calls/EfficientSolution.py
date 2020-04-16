@@ -2,8 +2,8 @@
 ## Leetcode
 ## Student: Vandit Jyotindra Gajjar
 ## Year: 2020
-## Problem: 268
-## Problem Name: Missing Number  
+## Problem: 933
+## Problem Name: Number of Recent Calls  
 ##===================================
 #Write a class RecentCounter to count recent requests.
 #It has only one method: ping(int t), where t represents some time in milliseconds.
