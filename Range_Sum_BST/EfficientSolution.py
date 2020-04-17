@@ -27,10 +27,10 @@ class Solution;
             return Sum	#We return Sum 
         if L <= curr_node.val <= R: #Condition-check: If our curr_node.val is in the range of [L, R]
             Sum += curr_node.val	#Sum is Sum + curr_node.val 
-            Sum = self._rangeSumBST(curr_node.left, L, R, Sum)	#Calling helper method 
-            Sum = self._rangeSumBST(curr_node.right, L, R, Sum)	#Calling helper method
+            Sum = self._rangeSumBST(curr_node.left, L, R, Sum)	#Calling helper method for left sub-tree 
+            Sum = self._rangeSumBST(curr_node.right, L, R, Sum)	#Calling helper method for right sub-tree
         if curr_node.val < L:	#Condition-check: if curr_node.val is less than L
-            Sum = self._rangeSumBST(curr_node.right, L, R, Sum)	#Calling helper method 
+            Sum = self._rangeSumBST(curr_node.right, L, R, Sum)	#Calling helper method for right sub-tree of curr_node.val
         if curr_node.val > R:	#Condition-check: if curr_node.val is greater than R
-            Sum = self._rangeSumBST(curr_node.left, L, R, Sum)	#Calling helper method
+            Sum = self._rangeSumBST(curr_node.left, L, R, Sum)	#Calling helper method for left sub-tree of curr_node.val
     return Sum	#Return total Sum at the end. 
