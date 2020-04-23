@@ -31,6 +31,8 @@
 #Output: 28
 class Solution:
     def uniquePaths(self, m, n):
+        if m == 0 or n == 0:	#Condition-check: If m and n is zero
+            return 0	#Return zero unique paths. 
         tmp = [[1 for j in range(m)] for i in range(n)]	#Create a 2d matrix of m column and n row, also filling row and column value by 1 
         for i in range(1, n):	#Loop through n 
             for j in range(1, m):	#Loop through m 
