@@ -57,4 +57,5 @@ class Solution:
                 sum = sum + current - 2 * previous	#Update sum
             else:	#Condition-check: Else
                 sum += current	#Update sum 
-        return sum
+			previous = current	#Update previous to current
+        return sum	#We'll return sum 
