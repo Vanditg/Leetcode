@@ -3,7 +3,7 @@
 ## Student: Vandit Jyotindra Gajjar
 ## Year: 2020
 ## Problem: 977
-## Problem Name: Sort Array by Parity  
+## Problem Name: Squares of a Sorted Array  
 ##===================================
 #
 #Given an array of integers A sorted in non-decreasing order, 
