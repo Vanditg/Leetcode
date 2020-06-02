@@ -1,9 +1,9 @@
 ##==================================
-## Leetcode May Challenge 
+## Leetcode June Challenge 
 ## Username: Vanditg
 ## Year: 2020
 ## Problem: 1
-## Problem Name: nvert Binary Tree
+## Problem Name: Invert Binary Tree
 ##===================================
 #
 #Invert a binary tree.
