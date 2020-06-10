@@ -3,7 +3,7 @@
 ## Username: Vanditg
 ## Year: 2020
 ## Problem:9
-## Problem Name: Power of Two
+## Problem Name: Is Subsequence
 ##===================================
 #
 #Given a string s and a string t, check if s is subsequence of t.
@@ -16,7 +16,7 @@
 #If there are lots of incoming S, say S1, S2, ... , Sk where k >= 1B, and you want to check one by one to see if T has its subsequence. In this scenario, how would you change your code?
 #
 #Example 1:
-#
+#	
 #Input: s = "abc", t = "ahbgdc"
 #Output: true
 #Example 2:
